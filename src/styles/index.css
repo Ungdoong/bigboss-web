@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  font-weight: 700;
+  font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-logo {
+  width: 150px;
+  height: 60px;
+  display: block;
+}
+
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-menu-dark.ant-menu-horizontal
+  > .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-1uq9j6g).ant-menu-dark.ant-menu-horizontal
+  > .ant-menu-item-selected:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.contents {
+  display: block;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.dashboard {
+  .dashboard-card {
+    border-width: 1px;
+    border-color: rgb(196, 192, 192);
+
+    .ant-card-head {
+      border-bottom-color: rgba(160, 159, 159, 0.596);
+
+      .ant-card-head-title {
+        font-size: 20px;
+      }
+    }
+
+    .card-icon-edit {
+      cursor: pointer;
+    }
+
+    .card-icon-close {
+      color: rgb(231 26 26 / 69%);
+      cursor: pointer;
+    }
+
+    &.top {
+      font-size: 20px;
+
+      &:where(.css-dev-only-do-not-override-1uq9j6g).ant-card .ant-card-head {
+        background-color: rgba(234, 234, 235, 0.671);
+        color: rgb(97, 97, 97);
+      }
+
+      .notice-plus {
+        position: absolute;
+        right: 20px;
+        top: 110px;
+        cursor: pointer;
+      }
+
+      .notice-title {
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      .alarm-content {
+        min-height: 5vh;
+        max-height: 10vh;
+        cursor: pointer;
+        white-space: wrap;
+      }
+    }
+
+    &.boss {
+      &:where(.css-dev-only-do-not-override-1uq9j6g).ant-card .ant-card-head {
+        background-color: rgb(252, 108, 108);
+        color: white;
+      }
+
+      .ant-card-body {
+        padding: 15px;
+      }
+
+      .boss-record-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-weight: 900;
+        margin-bottom: 7px;
+      }
+
+      .boss-record {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.notice-modal-body {
+  padding: 10px;
+}
+
+.notice-modal-body-title {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.notice-modal-delete-btn {
+  position: absolute;
+  bottom: 20px;
+}
